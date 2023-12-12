@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Group Project</string>
+    <string name="select_workout_prompt">Select a workout</string>
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="84dp"
+    android:gravity="center_horizontal"
+    android:background="#D6E1FF"
+
+    >
+
+    <!--  Navbar  -->
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="82dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:background="#022BFF"
+        >
+
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PROFILE"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18dp"
+            android:background="@android:color/transparent"
+            android:onClick="switchToProfileView"
+            />
+
+        <Button
+            android:id="@+id/progressButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PROGRESS"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18dp"
+            android:background="@android:color/transparent"
+            />
+
+        <Button
+            android:id="@+id/exercisesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="EXERCISES"
+            android:layout_marginTop="15dp"
+            android:textSize="18dp"
+            android:background="@android:color/transparent"
+            android:onClick="switchToExercisesView"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/enterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Progress"
+        android:layout_marginTop="50dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+
+        />
+
+
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_weight="1"
+        android:backgroundTint="#A3DA4A"
+        android:text="Enter"
+        android:textSize="20dp"
+        android:onClick="handleEnterButton"
+
+
+        />
+    <TableLayout
+        android:id="@+id/dataTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <!-- TableRow for headers -->
+        <TableRow
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Time"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="8dp" />
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>

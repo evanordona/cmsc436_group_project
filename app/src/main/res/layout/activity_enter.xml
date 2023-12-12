@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="84dp"
+    android:gravity="center_horizontal"
+    android:background="#D6E1FF"
+
+    >
+
+    <!--  Navbar  -->
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="82dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        android:background="#022BFF"
+        >
+
+        <Button
+            android:id="@+id/profileButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PROFILE"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18dp"
+            android:background="@android:color/transparent"
+            android:onClick="switchToProfileView"
+            />
+
+        <Button
+            android:id="@+id/progressButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="PROGRESS"
+            android:layout_marginRight="3dp"
+            android:layout_marginTop="15dp"
+            android:textSize="18dp"
+            android:background="@android:color/transparent"
+            android:onClick="switchToProgressView"
+            />
+
+        <Button
+            android:id="@+id/exercisesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="EXERCISES"
+            android:layout_marginTop="15dp"
+            android:textSize="18dp"
+            android:background="@android:color/transparent"
+            android:onClick="switchToExercisesView"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/enterTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Workout"
+        android:layout_marginTop="50dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+
+        />
+
+
+    <TextView
+        android:id="@+id/workoutTypeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Workout Type:"
+        android:layout_marginTop="50dp"
+        android:textSize="24dp"/>
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/workout_options"
+        android:prompt="@string/select_workout_prompt"
+        android:background="@color/white"
+        android:layout_marginHorizontal="50dp"
+        android:paddingVertical="10dp"
+
+        />
+
+    <TextView
+        android:id="@+id/timeSpentTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Spent (min):"
+        android:layout_marginTop="50dp"
+        android:textSize="24dp"
+
+        />
+
+    <EditText
+        android:id="@+id/editTextNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:background="@color/white"
+        android:paddingVertical="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="50dp"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Enter"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#A3DA4A"
+        android:textSize="20dp"
+        />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Back"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#A3DA4A"
+        android:layout_marginBottom="50dp"
+        android:textSize="20dp"
+        />
+
+
+
+
+</LinearLayout>

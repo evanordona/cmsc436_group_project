@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="workout_options">
+        <item>Select a workout</item>
+        <item>Push</item>
+        <item>Pull</item>
+        <item>Legs</item>
+    </string-array>
+</resources>
